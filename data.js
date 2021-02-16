@@ -40,7 +40,7 @@ var APP_DATA = {
           "yaw": 1.7074264771708973,
           "pitch": 0.282128798181029,
           "title": "B",
-          "text": "Description"
+          "text": "This is demo"
         }
       ]
     }
