@@ -304,12 +304,12 @@
     // iconWrapper.appendChild(icon);
 
     // Create title element.
-    var titleWrapper = document.createElement('div');
-    titleWrapper.classList.add('info-hotspot-title-wrapper');
-    var title = document.createElement('div');
-    title.classList.add('info-hotspot-title');
-    title.innerHTML = hotspot.title;
-    titleWrapper.appendChild(title);
+    // var titleWrapper = document.createElement('div');
+    // titleWrapper.classList.add('info-hotspot-title-wrapper');
+    // var title = document.createElement('div');
+    // title.classList.add('info-hotspot-title');
+    // title.innerHTML = hotspot.title;
+    // titleWrapper.appendChild(title);
 
     // Create close element.
     var closeWrapper = document.createElement('div');
@@ -321,13 +321,14 @@
 
     // Construct header element.
     header.appendChild(iconWrapper);
-    header.appendChild(titleWrapper);
+    // header.appendChild(titleWrapper);
     header.appendChild(closeWrapper);
 
     // Create text element.
     var text = document.createElement('div');
     text.classList.add('info-hotspot-text');
     text.innerHTML = hotspot.text;
+
 
     // Place header and text into wrapper element.
     wrapper.appendChild(header);
@@ -342,6 +343,7 @@
     var toggle = function() {
       wrapper.classList.toggle('visible');
       modal.classList.toggle('visible');
+      openNav();
     };
 
     // Show content when hotspot is clicked.
@@ -388,5 +390,13 @@
 
   // Display the initial scene.
   switchScene(scenes[0]);
+
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
 })();
