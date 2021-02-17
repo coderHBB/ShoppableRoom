@@ -341,7 +341,7 @@
     document.body.appendChild(modal);
 
     var toggle = function() {
-      wrapper.classList.toggle('visible');
+      // wrapper.classList.toggle('visible');
       modal.classList.toggle('visible');
       openNav();
     };
