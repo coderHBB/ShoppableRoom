@@ -343,7 +343,10 @@
     var toggle = function() {
       // wrapper.classList.toggle('visible');
       modal.classList.toggle('visible');
+      document.getElementById('desc').innerHTML = hotspot.text;
+      document.getElementById('card-title').innerHTML = hotspot.title;
       openNav();
+      console.log("This is working"+ hotspot.text);
     };
 
     // Show content when hotspot is clicked.

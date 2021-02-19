@@ -922,8 +922,9 @@ body.view-control-buttons .viewControlButton {
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: -20px;
   border-radius: 3px 0 0 3px;
+  display: inline-block;
 }
 
 /* Position the "prev buttin" to the left*/
