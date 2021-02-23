@@ -396,10 +396,12 @@
 
   function openNav() {
   document.getElementById("mySidenav").style.right = "0";
+  document.getElementById("fullscreenToggle").style.right = "300px";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.right = "-300px";
+  document.getElementById("fullscreenToggle").style.right = "0";
 }
 
 })();

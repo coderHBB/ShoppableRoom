@@ -104,12 +104,13 @@ body.multiple-scenes.mobile #titleBar {
   display: none;
   position: absolute;
   bottom: 0;
-  right: 350px;
+  right: 0;
   width: 40px;
   height: 40px;
   padding: 5px;
   background-color: rgb(103, 115, 131);
   background-color: rgba(103, 115, 131, 0.8);
+  transition: 0.5s;
 }
 
 .mobile #fullscreenToggle {
@@ -846,7 +847,7 @@ body.view-control-buttons .viewControlButton {
   right: -300px;
   background-color: white;
   height:100%;
-  overflow-x: hidden;
+  overflow-x:hidden;
   transition: 0.5s;
 }
 
@@ -1006,4 +1007,6 @@ body.view-control-buttons .viewControlButton {
 
 #desc {
   color: black;
+  text-align: left;
+  padding: 5%;
 }

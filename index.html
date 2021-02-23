@@ -99,7 +99,7 @@
   </div>
 
   <script>
-    var imgArray = ["images/lamp.jpg", "images/chair1.jpg", "images/chair2.jpg", "images/chair3.jpg", "images/lamp.jpg", "images/chair1.jpg", "images/chair2.jpg", "images/chair3.jpg"];
+    var imgArray = ["https://dl.airtable.com/.attachmentThumbnails/45cdff3a345bb9ff57e02902277ba57f/d29a90e9","images/lamp.jpg", "images/chair1.jpg", "images/chair2.jpg", "images/chair3.jpg", "images/lamp.jpg", "images/chair1.jpg", "images/chair2.jpg", "images/chair3.jpg"];
     var i;
     //find the class slideshow-container
     var slideShowContainer = document.getElementsByClassName('slideshow-container');
@@ -128,7 +128,7 @@
 
     var productCard = document.getElementById('mySidenav');
     var heading = productCard.getElementsByTagName('h1')
-    console.log(heading[0].innerText);
+
 
     var myDots = document.createElement('div');
     myDots.style.textAlign = "center";
@@ -145,8 +145,6 @@
       myDots.appendChild(imageDot);
     }
 
-    var expandBtn = document.getElementById('fullscreenToggle');
-    productCard.appendChild(expandBtn);
   </script>
 
 
