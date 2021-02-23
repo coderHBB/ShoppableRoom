@@ -89,9 +89,21 @@
     <span class="fa fa-star checked"></span>
     <span class="fa fa-star" style="color: black;"></span>
 
-    <button class="experience-btn">View in your space</button>
-    <button class="experience-btn">View it in 3D</button>
-    
+    <div>
+      <button class="experience-btn">
+        <span class="fa fa-camera-retro" style="color: black; position: absolute; right:50px"></span>
+        View in your space
+      </button>
+    </div>
+
+    <div>
+      <button class="experience-btn">
+        <span class="fa fa-cube" style="color: black; position: absolute; right:50px"></span>
+        View it in 3D
+      </button>
+    </div>
+
+
     <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       Duis aute
       irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -101,7 +113,9 @@
   </div>
 
   <script>
-    var imgArray = ["https://dl.airtable.com/.attachmentThumbnails/45cdff3a345bb9ff57e02902277ba57f/d29a90e9","images/lamp.jpg", "images/chair1.jpg", "images/chair2.jpg", "images/chair3.jpg", "images/lamp.jpg", "images/chair1.jpg", "images/chair2.jpg", "images/chair3.jpg"];
+    var imgArray = ["https://dl.airtable.com/.attachmentThumbnails/45cdff3a345bb9ff57e02902277ba57f/d29a90e9", "images/lamp.jpg", "images/chair1.jpg", "images/chair2.jpg", "images/chair3.jpg", "images/lamp.jpg", "images/chair1.jpg",
+      "images/chair2.jpg", "images/chair3.jpg"
+    ];
     var i;
     //find the class slideshow-container
     var slideShowContainer = document.getElementsByClassName('slideshow-container');
@@ -146,7 +160,6 @@
       });
       myDots.appendChild(imageDot);
     }
-
   </script>
 
 
