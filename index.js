@@ -118,7 +118,7 @@
   }
 
   // Set handler for autorotate toggle.
-  autorotateToggleElement.addEventListener('click', toggleAutorotate);
+  // autorotateToggleElement.addEventListener('click', toggleAutorotate);
 
   // Set up fullscreen mode, if supported.
   if (screenfull.enabled && data.settings.fullscreenButton) {
@@ -183,10 +183,10 @@
   }
 
   function switchScene(scene) {
-    stopAutorotate();
+    // stopAutorotate();
     scene.view.setParameters(scene.data.initialViewParameters);
     scene.scene.switchTo();
-    startAutorotate();
+    // startAutorotate();
     updateSceneName(scene);
     updateSceneList(scene);
   }
@@ -221,28 +221,28 @@
     sceneListToggleElement.classList.toggle('enabled');
   }
 
-  function startAutorotate() {
-    if (!autorotateToggleElement.classList.contains('enabled')) {
-      return;
-    }
-    viewer.startMovement(autorotate);
-    viewer.setIdleMovement(3000, autorotate);
-  }
+  // function startAutorotate() {
+  //   if (!autorotateToggleElement.classList.contains('enabled')) {
+  //     return;
+  //   }
+  //   viewer.startMovement(autorotate);
+  //   viewer.setIdleMovement(3000, autorotate);
+  // }
 
-  function stopAutorotate() {
-    viewer.stopMovement();
-    viewer.setIdleMovement(Infinity);
-  }
+  // function stopAutorotate() {
+  //   viewer.stopMovement();
+  //   viewer.setIdleMovement(Infinity);
+  // }
 
-  function toggleAutorotate() {
-    if (autorotateToggleElement.classList.contains('enabled')) {
-      autorotateToggleElement.classList.remove('enabled');
-      stopAutorotate();
-    } else {
-      autorotateToggleElement.classList.add('enabled');
-      startAutorotate();
-    }
-  }
+  // function toggleAutorotate() {
+  //   if (autorotateToggleElement.classList.contains('enabled')) {
+  //     autorotateToggleElement.classList.remove('enabled');
+  //     stopAutorotate();
+  //   } else {
+  //     autorotateToggleElement.classList.add('enabled');
+  //     startAutorotate();
+  //   }
+  // }
 
   function createLinkHotspotElement(hotspot) {
 
@@ -395,11 +395,11 @@
   switchScene(scenes[0]);
 
   function openNav() {
-  document.getElementById("mySidenav").style.width = "300px";
+  document.getElementById("mySidenav").style.right = "0";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.right = "-300px";
 }
 
 })();

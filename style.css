@@ -103,8 +103,8 @@ body.multiple-scenes.mobile #titleBar {
 #fullscreenToggle {
   display: none;
   position: absolute;
-  top: 0;
-  right: 0;
+  bottom: 0;
+  right: 350px;
   width: 40px;
   height: 40px;
   padding: 5px;
@@ -464,6 +464,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   transition: width 0.3s ease-in-out 0.5s,
               border-radius 0.3s ease-in-out 0.5s; */
 }
+
 
 .mobile .info-hotspot .info-hotspot-header {
   width: 50px;
@@ -836,15 +837,17 @@ body.view-control-buttons .viewControlButton {
 /*Styles for hobb panle*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 0;
+  width: 300px;
   margin: auto;
   text-align: center;
   font-family: arial;
   display: block;
   position: absolute;
-  right: 0px;
+  right: -300px;
   background-color: white;
   height:100%;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 #panel-close-btn {

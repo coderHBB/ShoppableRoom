@@ -33,10 +33,7 @@
     <h1 class="sceneName"></h1>
   </div>
 
-  <a href="javascript:void(0)" id="autorotateToggle">
-    <img class="icon off" src="img/play.png">
-    <img class="icon on" src="img/pause.png">
-  </a>
+
 
   <a href="javascript:void(0)" id="fullscreenToggle">
     <img class="icon off" src="img/fullscreen.png">
@@ -147,6 +144,9 @@
       });
       myDots.appendChild(imageDot);
     }
+
+    var expandBtn = document.getElementById('fullscreenToggle');
+    productCard.appendChild(expandBtn);
   </script>
 
 
@@ -185,11 +185,11 @@
 
   <script>
     function openNav() {
-      document.getElementById("mySidenav").style.width = "300px";
+      document.getElementById("mySidenav").style.right = "0";
     }
 
     function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("mySidenav").style.right = "-300px";
     }
   </script>
 
