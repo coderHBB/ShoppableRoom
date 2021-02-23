@@ -401,7 +401,7 @@
 
 function closeNav() {
   document.getElementById("mySidenav").style.right = "-300px";
-  document.getElementById("fullscreenToggle").style.right = "0";
+  console.log("closed man");
 }
 
 })();
