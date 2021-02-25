@@ -114,6 +114,7 @@ body.multiple-scenes.mobile #titleBar {
   transition: 0.5s;
   border: 2px solid black;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .mobile #fullscreenToggle {
@@ -867,6 +868,7 @@ body.view-control-buttons .viewControlButton {
   z-index: 1;
   left: 5px;
   top:5px;
+  border-radius: 5px;
 }
 
 #panel-close-btn:hover {
@@ -1031,6 +1033,7 @@ body.view-control-buttons .viewControlButton {
   cursor: pointer;
   width:80%;
   margin: 5px;
+  border-radius: 5px;
 }
 
 .experience-btn:hover{
