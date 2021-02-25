@@ -44,7 +44,7 @@ var APP_DATA = {
           "title": "allen + roth McAden Rectangle Wicker Outdoor Coffee Table 22-in W x 40-in L",
           "price":"$138.00",
           "text": "The traditional style of the McAden collection provides every-day comfort that matches most outdoor décor. This coffee table features an embossed wood-grain tabletop that is hand painted to look like a dark walnut slab of wood. A unique rounded-rectangle shape provides extra space for entertaining. The legs of the table are wrapped in warm brown hand-woven wicker. This coffee table can be combined with any of the McAden furniture available at Lowe’s.",
-          "image":["https://dl.airtable.com/.attachmentThumbnails/397b1a12bab37fd9c80270b06c02a44a/965b88ed","images/lamp.jpg"]
+          "image":["https://dl.airtable.com/.attachmentThumbnails/397b1a12bab37fd9c80270b06c02a44a/965b88ed"]
         }
       ]
     }
