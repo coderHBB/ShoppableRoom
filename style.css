@@ -127,8 +127,8 @@ body.fullscreen-enabled #fullscreenToggle {
 
 #fullscreenToggle .icon {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 3px;
+  right: 3px;
   width: 30px;
   height: 30px;
 }
@@ -866,6 +866,7 @@ body.view-control-buttons .viewControlButton {
   position: absolute;
   z-index: 1;
   left: 5px;
+  top:5px;
 }
 
 #panel-close-btn:hover {
@@ -1018,7 +1019,7 @@ body.view-control-buttons .viewControlButton {
 #desc {
   color: black;
   text-align: left;
-  padding: 5%;
+  padding: 10%;
 }
 
 .experience-btn{
