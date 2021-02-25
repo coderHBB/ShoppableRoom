@@ -874,7 +874,7 @@ body.view-control-buttons .viewControlButton {
   color: white;
 }
 
-.price {
+#price {
   color: black;
   font-size: 22px;
   display: inline-block;

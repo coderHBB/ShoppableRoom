@@ -345,6 +345,75 @@
       modal.classList.toggle('visible');
       document.getElementById('desc').innerHTML = hotspot.text;
       document.getElementById('card-title').innerHTML = hotspot.title;
+      document.getElementById('price').innerHTML = hotspot.price;
+
+      //insert images and dots
+
+      //check if images are created, if yes delete it
+      var createdImages = document.getElementsByClassName("mySlides");
+      var p;
+      var numberOfImages = createdImages.length;
+      // var imageDots = document.getElementsByClassName("image-dot");
+      if(numberOfImages > 0)
+      {
+        for(p = 0; p < numberOfImages; p++)
+        {
+           createdImages[p].remove();
+           // imageDots[p].remove();
+        }
+      }
+
+      var imgArray = hotspot.image;
+      var i;
+      //find the class slideshow-container
+      var slideShowContainer = document.getElementsByClassName('slideshow-container');
+
+      for (i = 0; i < imgArray.length; i++) {
+        //create element to hold the slides
+        var mySlides = document.createElement('div');
+        mySlides.classList.add('mySlides');
+        mySlides.classList.add('fade');
+        slideShowContainer[0].appendChild(mySlides);
+
+        //create a number div to hold the image numbers
+        var imageNumber = document.createElement('div');
+        imageNumber.classList.add('numbertext');
+        imageNumber.innerHTML = i + 1 + "/" + imgArray.length;
+        mySlides.appendChild(imageNumber);
+
+        //create image
+        var mainImage = document.createElement('img');
+        mainImage.src = imgArray[i];
+        mainImage.alt = "product image";
+        mainImage.style.width = "100%";
+        mySlides.appendChild(mainImage);
+      }
+
+      var imgMySlides = document.getElementsByClassName('mySlides');
+      imgMySlides[0].style.display = 'block';
+
+      var productCard = document.getElementById('mySidenav');
+      var heading = productCard.getElementsByTagName('h1')
+
+
+      var myDots = document.createElement('div');
+      myDots.style.textAlign = "center";
+      myDots.classList.add("image-dot");
+      productCard.insertBefore(myDots, heading[0]);
+
+      for (i = 0; i < imgArray.length; i++) {
+        var imageDot = document.createElement('span');
+        imageDot.classList.add('dot');
+        // imageDot.addEventListener('click',currentSlide(i+1));
+        // imageDot.onclick = "currentSlide(i)";
+        imageDot.addEventListener('click', function() {
+          currentSlide(i + 1);
+        });
+        myDots.appendChild(imageDot);
+      }
+
+
+
       openNav();
       console.log("This is working"+ hotspot.text);
     };
