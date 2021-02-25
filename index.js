@@ -361,6 +361,7 @@
       var p;
       var numberOfImages = createdImages.length;
       // var imageDots = document.getElementsByClassName("image-dot");
+      console.log("numberOfImages : "+numberOfImages);
       if (numberOfImages > 0) {
         for (p = 0; p < numberOfImages; p++) {
           createdImages[p].remove();
@@ -428,7 +429,7 @@
 
 
       openNav();
-      console.log("This is working" + hotspot.text);
+      // console.log("This is working" + hotspot.text);
     };
 
     // Show content when hotspot is clicked.
