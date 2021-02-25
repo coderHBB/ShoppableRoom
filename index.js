@@ -74,11 +74,12 @@
   var scenes = data.scenes.map(function(data) {
     var urlPrefix = "tiles";
     var source = Marzipano.ImageUrlSource.fromString(
-      urlPrefix + "/" + data.id + "/{z}/{f}/{y}/{x}.jpg",
-      { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
+      urlPrefix + "/" + data.id + "/{z}/{f}/{y}/{x}.jpg", {
+        cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg"
+      });
     var geometry = new Marzipano.CubeGeometry(data.levels);
 
-    var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
+    var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100 * Math.PI / 180, 120 * Math.PI / 180);
     var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
 
     var scene = viewer.createScene({
@@ -91,13 +92,19 @@
     // Create link hotspots.
     data.linkHotspots.forEach(function(hotspot) {
       var element = createLinkHotspotElement(hotspot);
-      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
+      scene.hotspotContainer().createHotspot(element, {
+        yaw: hotspot.yaw,
+        pitch: hotspot.pitch
+      });
     });
 
     // Create info hotspots.
     data.infoHotspots.forEach(function(hotspot) {
       var element = createInfoHotspotElement(hotspot);
-      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
+      scene.hotspotContainer().createHotspot(element, {
+        yaw: hotspot.yaw,
+        pitch: hotspot.pitch
+      });
     });
 
     return {
@@ -111,7 +118,7 @@
   var autorotate = Marzipano.autorotate({
     yawSpeed: 0.03,
     targetPitch: 0,
-    targetFov: Math.PI/2
+    targetFov: Math.PI / 2
   });
   if (data.settings.autorotateEnabled) {
     autorotateToggleElement.classList.add('enabled');
@@ -171,12 +178,12 @@
 
   // Associate view controls with elements.
   var controls = viewer.controls();
-  controls.registerMethod('upElement',    new Marzipano.ElementPressControlMethod(viewUpElement,     'y', -velocity, friction), true);
-  controls.registerMethod('downElement',  new Marzipano.ElementPressControlMethod(viewDownElement,   'y',  velocity, friction), true);
-  controls.registerMethod('leftElement',  new Marzipano.ElementPressControlMethod(viewLeftElement,   'x', -velocity, friction), true);
-  controls.registerMethod('rightElement', new Marzipano.ElementPressControlMethod(viewRightElement,  'x',  velocity, friction), true);
-  controls.registerMethod('inElement',    new Marzipano.ElementPressControlMethod(viewInElement,  'zoom', -velocity, friction), true);
-  controls.registerMethod('outElement',   new Marzipano.ElementPressControlMethod(viewOutElement, 'zoom',  velocity, friction), true);
+  controls.registerMethod('upElement', new Marzipano.ElementPressControlMethod(viewUpElement, 'y', -velocity, friction), true);
+  controls.registerMethod('downElement', new Marzipano.ElementPressControlMethod(viewDownElement, 'y', velocity, friction), true);
+  controls.registerMethod('leftElement', new Marzipano.ElementPressControlMethod(viewLeftElement, 'x', -velocity, friction), true);
+  controls.registerMethod('rightElement', new Marzipano.ElementPressControlMethod(viewRightElement, 'x', velocity, friction), true);
+  controls.registerMethod('inElement', new Marzipano.ElementPressControlMethod(viewInElement, 'zoom', -velocity, friction), true);
+  controls.registerMethod('outElement', new Marzipano.ElementPressControlMethod(viewOutElement, 'zoom', velocity, friction), true);
 
   function sanitize(s) {
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
@@ -257,7 +264,7 @@
     icon.classList.add('link-hotspot-icon');
 
     // Set rotation transform.
-    var transformProperties = [ '-ms-transform', '-webkit-transform', 'transform' ];
+    var transformProperties = ['-ms-transform', '-webkit-transform', 'transform'];
     for (var i = 0; i < transformProperties.length; i++) {
       var property = transformProperties[i];
       icon.style[property] = 'rotate(' + hotspot.rotation + 'rad)';
@@ -354,12 +361,18 @@
       var p;
       var numberOfImages = createdImages.length;
       // var imageDots = document.getElementsByClassName("image-dot");
-      if(numberOfImages > 0)
-      {
-        for(p = 0; p < numberOfImages; p++)
-        {
-           createdImages[p].remove();
-           // imageDots[p].remove();
+      if (numberOfImages > 0) {
+        for (p = 0; p < numberOfImages; p++) {
+          createdImages[p].remove();
+          // imageDots[p].remove();
+        }
+      }
+      var imageDots = document.getElementsByClassName("image-dot");
+      var d;
+      var numberOfDots = imageDots.length;
+      if (numberOfDots > 0) {
+        for (d = 0; d < numberOfDots; d++) {
+          imageDots[d].remove();
         }
       }
 
@@ -415,7 +428,7 @@
 
 
       openNav();
-      console.log("This is working"+ hotspot.text);
+      console.log("This is working" + hotspot.text);
     };
 
     // Show content when hotspot is clicked.
@@ -433,8 +446,9 @@
 
   // Prevent touch and scroll events from reaching the parent element.
   function stopTouchAndScrollEventPropagation(element, eventList) {
-    var eventList = [ 'touchstart', 'touchmove', 'touchend', 'touchcancel',
-                      'wheel', 'mousewheel' ];
+    var eventList = ['touchstart', 'touchmove', 'touchend', 'touchcancel',
+      'wheel', 'mousewheel'
+    ];
     for (var i = 0; i < eventList.length; i++) {
       element.addEventListener(eventList[i], function(event) {
         event.stopPropagation();
@@ -464,13 +478,13 @@
   switchScene(scenes[0]);
 
   function openNav() {
-  document.getElementById("mySidenav").style.right = "0";
-  document.getElementById("fullscreenToggle").style.right = "300px";
-}
+    document.getElementById("mySidenav").style.right = "0";
+    document.getElementById("fullscreenToggle").style.right = "300px";
+  }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.right = "-300px";
-  console.log("closed man");
-}
+  function closeNav() {
+    document.getElementById("mySidenav").style.right = "-300px";
+    console.log("closed man");
+  }
 
 })();
