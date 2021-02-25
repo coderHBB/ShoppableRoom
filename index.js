@@ -363,7 +363,7 @@
       // var imageDots = document.getElementsByClassName("image-dot");
       console.log("numberOfImages : "+numberOfImages);
       if (numberOfImages > 0) {
-        for (p = 0; p < numberOfImages; p++) {
+        for (p = numberOfImages-1; p >= 0 ; p--) {
           createdImages[p].remove();
           // imageDots[p].remove();
         }
