@@ -361,9 +361,9 @@
       var p;
       var numberOfImages = createdImages.length;
       // var imageDots = document.getElementsByClassName("image-dot");
-      console.log("numberOfImages : "+numberOfImages);
+      console.log("numberOfImages : " + numberOfImages);
       if (numberOfImages > 0) {
-        for (p = numberOfImages-1; p >= 0 ; p--) {
+        for (p = numberOfImages - 1; p >= 0; p--) {
           createdImages[p].remove();
           // imageDots[p].remove();
         }
@@ -382,7 +382,41 @@
       //find the class slideshow-container
       var slideShowContainer = document.getElementsByClassName('slideshow-container');
 
-      for (i = 0; i < imgArray.length; i++) {
+      //adding the 3d model to the slide show
+      var slideList = document.createElement('div');
+      slideList.classList.add('mySlides');
+      slideList.classList.add('fade');
+      slideList.id = '3d-model';
+      slideShowContainer[0].appendChild(slideList);
+
+      var threeDModelelement = document.getElementById('3d-model');
+      threeDModelelement.style.zIndex = 0;
+      var viewer = new BabylonViewer.DefaultViewer(threeDModelelement, {
+        scene: {
+          debug: false
+        },
+        camera: {
+          behaviors: {
+            autoRotate: 0
+          }
+        },
+        templates:{
+          loadingScreen:{
+            params:{
+              staticLoadingImage : "img/360.png",
+            }
+          },
+          navBar:{
+            params:{
+              logoLink : "https://www.houseofbluebeans.com/"
+            }
+          }
+        },
+        model: {
+          url: hotspot.image[0]
+        }
+      });
+      for (i = 1; i < imgArray.length; i++) {
         //create element to hold the slides
         var mySlides = document.createElement('div');
         mySlides.classList.add('mySlides');
