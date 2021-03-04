@@ -112,7 +112,7 @@ body.multiple-scenes.mobile #titleBar {
   color:#717171;
   /* background-color: rgba(103, 115, 131, 0.8); */
   transition: 0.5s;
-  border: 2px solid #717171;
+  border: 1px solid #717171;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -858,7 +858,7 @@ body.view-control-buttons .viewControlButton {
 #panel-close-btn {
   background-color: white;
   color:#717171;
-  border: 2px solid #717171;
+  border: 1px solid #717171;
   padding: 0;
   width: 32px;
   height:32px;
@@ -1026,7 +1026,7 @@ body.view-control-buttons .viewControlButton {
 }
 
 .experience-btn{
-  border: 2px solid #717171;
+  border: 1px solid #717171;
   background-color: white;
   color: #717171;
   padding: 14px 28px;
