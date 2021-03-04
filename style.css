@@ -81,7 +81,7 @@ body.multiple-scenes.mobile #titleBar {
   padding: 5px;
   /* background-color: white; */
   background-color: white;
-  color: black;
+  color: #717171;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -109,10 +109,10 @@ body.multiple-scenes.mobile #titleBar {
   height: 40px;
   padding: 5px;
   background-color: white;
-  color:black;
+  color:#717171;
   /* background-color: rgba(103, 115, 131, 0.8); */
   transition: 0.5s;
-  border: 2px solid black;
+  border: 2px solid #717171;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -857,8 +857,8 @@ body.view-control-buttons .viewControlButton {
 
 #panel-close-btn {
   background-color: white;
-  color:black;
-  border: 2px solid black;
+  color:#717171;
+  border: 2px solid #717171;
   padding: 0;
   width: 32px;
   height:32px;
@@ -877,7 +877,7 @@ body.view-control-buttons .viewControlButton {
 }
 
 #price {
-  color: black;
+  color: #717171;
   font-size: 22px;
   display: inline-block;
   padding: 10px;
@@ -929,7 +929,7 @@ body.view-control-buttons .viewControlButton {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -1019,15 +1019,15 @@ body.view-control-buttons .viewControlButton {
 }
 
 #desc {
-  color: black;
+  color: #717171;
   text-align: left;
   padding: 10%;
 }
 
 .experience-btn{
-  border: 2px solid black;
+  border: 2px solid #717171;
   background-color: white;
-  color: black;
+  color: #717171;
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
