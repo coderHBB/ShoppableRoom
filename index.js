@@ -519,7 +519,7 @@
 
   function closeNav() {
     document.getElementById("mySidenav").style.right = "-300px";
-    console.log("closed man");
+
   }
 
 })();

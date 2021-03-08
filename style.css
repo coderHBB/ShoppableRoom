@@ -98,6 +98,7 @@ body.multiple-scenes.mobile #titleBar {
 
 .mobile #titleBar .sceneName {
   line-height: 40px;
+  width: 30%;
 }
 
 #fullscreenToggle {
@@ -664,7 +665,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   height: 100%;
   overflow: hidden;
   z-index: 11000 !important;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: red;
   line-height: 1.2em;
   opacity: 0;
   visibility: hidden;
@@ -850,6 +851,20 @@ body.view-control-buttons .viewControlButton {
   position: absolute;
   right: -300px;
   background-color: white;
+  height:100%;
+  overflow-x:hidden;
+  transition: 0.5s;
+}
+
+.mobile .card{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  display: block;
+  position: absolute;
+  right: -300%;
+  background-color: orange;
   height:100%;
   overflow-x:hidden;
   transition: 0.5s;
