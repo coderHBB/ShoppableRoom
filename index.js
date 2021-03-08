@@ -349,7 +349,7 @@
 
     var toggle = function() {
       // wrapper.classList.toggle('visible');
-      modal.classList.toggle('visible');
+      // modal.classList.toggle('visible');
       document.getElementById('desc').innerHTML = hotspot.text;
       document.getElementById('card-title').innerHTML = hotspot.title;
       document.getElementById('price').innerHTML = hotspot.price;
