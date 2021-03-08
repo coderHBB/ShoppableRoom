@@ -864,7 +864,7 @@ body.view-control-buttons .viewControlButton {
   display: block;
   position: absolute;
   right: -300%;
-  background-color: orange;
+  background-color: white;
   height:100%;
   overflow-x:hidden;
   transition: 0.5s;
