@@ -49,11 +49,13 @@ a, a:hover, a:active, a:visited {
   right: 40px;
   height: 40px;
   text-align: center;
+  margin: auto;
 }
 
 .mobile #titleBar {
   height: 50px;
   right: 50px;
+  margin: auto;
 }
 
 /* If there is a fullscreen button the title bar must make space for it */
