@@ -79,7 +79,7 @@ var source = Marzipano.ImageUrlSource.fromString(
 );
 
 // Create geometry.
-var geometry = new Marzipano.CubeGeometry([{ tileSize: 1024, size: 1024 }]);
+var geometry = new Marzipano.CubeGeometry([{ tileSize: 4096, size: 4096 }]);
 
 // Create view.
 var limiter = Marzipano.RectilinearView.limit.traditional(4096, 100*Math.PI/180);

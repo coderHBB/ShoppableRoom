@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-patio360view",
-      "name": "Patio360View",
+      "name": "IRIS",
       "levels": [
         {
           "tileSize": 256,
