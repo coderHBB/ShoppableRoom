@@ -31,16 +31,48 @@ var APP_DATA = {
       "linkHotspots": [],
       "infoHotspots": [
         {
-          "yaw": 6.9,
-          "pitch": 0.45,
-          "title": "Elliot Creek Rectangle Outdoor Dining Table 40-in W x 66.9-in L with Umbrella Hole",
-          "price": "$230.00",
-          "text": "The high quality olefin fabric on the cushions of the Elliot Creek Metal Outdoor Dining Set are UV resistant to help keep your set looking its best. The table features a beautiful stamped pattern surrounded by tiles providing a brilliant visual appeal. Sturdy, durable steel frames form the foundation for a long-lasting and stylish dining set. Decorative, weather-resistant high-performance powder-coating covers all of the frames surfaces, creating a beautiful and appealing framework for the cushions. There are motion captains chairs for enhanced comfort. Deep seating set includes to complete the collection.",
-          "image":["models/PatioTable1099833.glb","https://dl.airtable.com/.attachmentThumbnails/45cdff3a345bb9ff57e02902277ba57f/d29a90e9","http://mobileimages.lowes.com/product/converted/885227/885227010274_40321777.jpg?size=pdhi"]
+          "yaw": 6,
+          "pitch": 0.3,
+          "title": "allen + roth Solid Yellow Square Throw Pillow",
+          "price": "$19.98",
+          "text": 'Add some style and comfort to your outdoor living space with this decorative pillow featuring a textural design in neutral with white tufts. Sized at 14" x 20", it fits nicely on all sizes of furniture. Pillow features corner tassels. The pillow is treated with UV resistance for long, lasting color.',
+          "image":["models/PatioTable1099833.glb","https://mobileimages.lowes.com/product/converted/047218/047218320827.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/047218/047218320827_42288423.jpg?size=pdhi"]
+        },
+        {
+          "yaw": 5.89,
+          "pitch": 0.3,
+          "title": "Safavieh Soleil 20-in x 20-in Green/White Polypropylene Square Indoor Decorative Pillow",
+          "price": "$109.23",
+          "text": 'Like a scene straight from a lush tropical isle, the Paradise Pillow is a sultry breeze made especially for your home decor. Soft textures and the evocative design of this classy-casual throw pillow make it an especially good choice for adding warm green tones and a cheerful pattern to room furnishings. A hidden zipper on the back cover makes for easy-access care and cleaning.',
+          "image":["models/PatioTable1099833.glb","https://mobileimages.lowes.com/product/converted/889048/889048535190.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/889048/889048535190_09855107.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/889048/889048535190_09855108.jpg?size=pdhi"]
+        },
+        {
+          "yaw": 6.2,
+          "pitch": 0.3,
+          "title": "allen + roth Animal Print Multi Rectangular Animals Lumbar Pillow",
+          "price": "$21.98",
+          "text": 'Leopard lumbar pillow is the perfect accessory to bring together your outdoor space and will coordinate great with your outdoor cushions.',
+          "image":["models/PatioTable1099833.glb","https://mobileimages.lowes.com/product/converted/850013/850013649792.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/850013/850013649792_42186964.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/850013/850013649792_42186969.jpg?size=pdhi"]
+        },
+        {
+          "yaw": 6.5,
+          "pitch": 0.2,
+          "title": "allen + roth Graphic Print Green Square Throw Pillow",
+          "price": "$24.98",
+          "text": 'Add some style and comfort to your outdoor living space with this decorative pillow featuring a textural design in neutral with white tufts. Sized at 14" x 20", it fits nicely on all sizes of furniture. Pillow features corner tassels. The pillow is treated with UV resistance for long, lasting color.',
+          "image":["models/PatioTable1099833.glb","https://mobileimages.lowes.com/product/converted/047218/047218320780.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/047218/047218320780_40178758.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/047218/047218320780_42284194.jpg?size=pdhi"]
+        },
+        {
+          "yaw": 6.3,
+          "pitch": 0.2,
+          "title": "CASAINC Futon Couch Sofa",
+          "price": "N/A",
+          "text": 'This product is currently not available, please come back later',
+          "image":["models/PatioTable1099833.glb","https://mobileimages.lowes.com/product/converted/500085/5000853111.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/500085/5000853111_40314204.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/500085/5000853111_40314207.jpg?size=pdhi"]
         },
         {
           "yaw": 4.8,
-          "pitch": 0.282128798181029,
+          "pitch": 0.4,
           "title": "allen + roth McAden Rectangle Wicker Outdoor Coffee Table 22-in W x 40-in L",
           "price":"$138.00",
           "text": "The traditional style of the McAden collection provides every-day comfort that matches most outdoor décor. This coffee table features an embossed wood-grain tabletop that is hand painted to look like a dark walnut slab of wood. A unique rounded-rectangle shape provides extra space for entertaining. The legs of the table are wrapped in warm brown hand-woven wicker. This coffee table can be combined with any of the McAden furniture available at Lowe’s.",
