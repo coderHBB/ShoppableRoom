@@ -84,7 +84,7 @@ var APP_DATA = {
           "title": "Grayson Lane Glam Blue Velvet Round Ottoman",
           "price": "N/A",
           "text": 'Add sleek texture with boho style to your bedroom or living room with this comfy large pouf, featuring aqua blue velvet upholstery. The large cushion can be used as a table, large ottoman, or stool, securely propped up by solid pine wood legs. The smooth top is taught with a radial stitched pattern and the sides are pleated for extra elegant texture',
-          "image":["models/PatioTable1099833.glb","https://mobileimages.lowes.com/product/converted/100313/1003130658.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/100313/1003130658_16578878.jpg?size=pdhi"]
+          "image":["https://hbbdownloadtest.s3.ap-south-1.amazonaws.com/Ottoman2707650.glb","https://mobileimages.lowes.com/product/converted/100313/1003130658.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/100313/1003130658_16578878.jpg?size=pdhi"]
         },
         {
           "yaw": 5.7,
@@ -165,6 +165,14 @@ var APP_DATA = {
           "price": "$42.98",
           "text": 'Durable and stylish, the 12 In. cream white ceramic Estes planter comes with an attached saucer. The Estes planter features a versatile design in a soft cream white to fit any room in your home.',
           "image":["models/PatioTable1099833.glb","https://mobileimages.lowes.com/product/converted/037094/037094036691.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/037094/037094036691_10442813.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/037094/037094036691_10370194.jpg?size=pdhi"]
+        },
+        {
+          "yaw": 6.1,
+          "pitch": -0.92,
+          "title": "allen + roth Adara Black Traditional Drum Pendant Light",
+          "price": "$169.98",
+          "text": 'Natural rattan pendant from the allen + roth ADARA collection offers an on-trend earthy appeal',
+          "image":["models/PatioTable1099833.glb","https://mobileimages.lowes.com/product/converted/725916/725916106621.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/725916/725916106621_16650926.jpg?size=pdhi"]
         },
       ]
     }
