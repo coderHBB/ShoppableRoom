@@ -82,7 +82,7 @@ var source = Marzipano.ImageUrlSource.fromString(
 var geometry = new Marzipano.CubeGeometry([{ tileSize: 2048, size: 2048 }]);
 
 // Create view.
-var limiter = Marzipano.RectilinearView.limit.traditional(2048, 100*Math.PI/220);
+var limiter = Marzipano.RectilinearView.limit.traditional(2048, 100*Math.PI/240);
 var view = new Marzipano.RectilinearView(null, limiter);
 
     var scene = viewer.createScene({
@@ -371,6 +371,8 @@ var view = new Marzipano.RectilinearView(null, limiter);
           // imageDots[p].remove();
         }
       }
+
+      //check if dots are created, if yes delete it
       var imageDots = document.getElementsByClassName("image-dot");
       var d;
       var numberOfDots = imageDots.length;
@@ -381,11 +383,72 @@ var view = new Marzipano.RectilinearView(null, limiter);
       }
 
       var imgArray = hotspot.image;
+      var modelArray = hotspot.model;
       var i;
       //find the class slideshow-container
       var slideShowContainer = document.getElementsByClassName('slideshow-container');
 
       //adding the 3d model to the slide show
+      // var slideList = document.createElement('div');
+      // slideList.classList.add('mySlides');
+      // slideList.classList.add('fade');
+      // slideList.id = '3d-model';
+      // slideShowContainer[0].appendChild(slideList);
+      //
+      // var threeDModelelement = document.getElementById('3d-model');
+      // threeDModelelement.style.zIndex = 0;
+      // var viewer = new BabylonViewer.DefaultViewer(threeDModelelement, {
+      //   scene: {
+      //     debug: false
+      //   },
+      //   camera: {
+      //     behaviors: {
+      //       autoRotate: 0
+      //     }
+      //   },
+      //   templates:{
+      //     loadingScreen:{
+      //       params:{
+      //         staticLoadingImage : "img/360.png",
+      //       }
+      //     },
+      //     navBar:{
+      //       params:{
+      //         logoLink : "https://www.houseofbluebeans.com/"
+      //       }
+      //     }
+      //   },
+      //   model: {
+      //     url: hotspot.image[0]
+      //   }
+      // });
+      var imgModelLength = imgArray.length + modelArray.length;
+
+      for (i = 0; i < imgArray.length; i++) {
+        //create element to hold the slides
+        var mySlides = document.createElement('div');
+        mySlides.classList.add('mySlides');
+        mySlides.classList.add('fade');
+        slideShowContainer[0].appendChild(mySlides);
+
+        //create a number div to hold the image numbers
+        var imageNumber = document.createElement('div');
+        imageNumber.classList.add('numbertext');
+        imageNumber.innerHTML = i + 1 + "/" + imgModelLength;
+        mySlides.appendChild(imageNumber);
+
+        //create image
+        var mainImage = document.createElement('img');
+        mainImage.src = imgArray[i];
+        mainImage.alt = "product image";
+        mainImage.style.width = "100%";
+        mySlides.appendChild(mainImage);
+      }
+
+
+
+      //adding the 3d model to the slide show
+      if(modelArray.length > 0){
       var slideList = document.createElement('div');
       slideList.classList.add('mySlides');
       slideList.classList.add('fade');
@@ -394,6 +457,7 @@ var view = new Marzipano.RectilinearView(null, limiter);
 
       var threeDModelelement = document.getElementById('3d-model');
       threeDModelelement.style.zIndex = 0;
+      // threeDModelelement.style.display = 'none';
       var viewer = new BabylonViewer.DefaultViewer(threeDModelelement, {
         scene: {
           debug: false
@@ -416,32 +480,14 @@ var view = new Marzipano.RectilinearView(null, limiter);
           }
         },
         model: {
-          url: hotspot.image[0]
+          url: hotspot.model[0]
         }
       });
-      for (i = 1; i < imgArray.length; i++) {
-        //create element to hold the slides
-        var mySlides = document.createElement('div');
-        mySlides.classList.add('mySlides');
-        mySlides.classList.add('fade');
-        slideShowContainer[0].appendChild(mySlides);
-
-        //create a number div to hold the image numbers
-        var imageNumber = document.createElement('div');
-        imageNumber.classList.add('numbertext');
-        imageNumber.innerHTML = i + 1 + "/" + imgArray.length;
-        mySlides.appendChild(imageNumber);
-
-        //create image
-        var mainImage = document.createElement('img');
-        mainImage.src = imgArray[i];
-        mainImage.alt = "product image";
-        mainImage.style.width = "100%";
-        mySlides.appendChild(mainImage);
-      }
+    }
 
       var imgMySlides = document.getElementsByClassName('mySlides');
       imgMySlides[0].style.display = 'block';
+      imgMySlides[imgMySlides.length - 1].style.display = 'none';
 
       var productCard = document.getElementById('mySidenav');
       var heading = productCard.getElementsByTagName('h1')
@@ -452,7 +498,7 @@ var view = new Marzipano.RectilinearView(null, limiter);
       myDots.classList.add("image-dot");
       productCard.insertBefore(myDots, heading[0]);
 
-      for (i = 0; i < imgArray.length; i++) {
+      for (i = 0; i < imgModelLength; i++) {
         var imageDot = document.createElement('span');
         imageDot.classList.add('dot');
         // imageDot.addEventListener('click',currentSlide(i+1));
