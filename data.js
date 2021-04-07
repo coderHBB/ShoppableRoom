@@ -190,7 +190,7 @@ var APP_DATA = {
           "price": "$169.98",
           "text": 'Natural rattan pendant from the allen + roth ADARA collection offers an on-trend earthy appeal',
           "image":["https://mobileimages.lowes.com/product/converted/725916/725916106621.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/725916/725916106621_16650926.jpg?size=pdhi"],
-          "model":["models/PatioTable1099833.glb"]
+          "model":["https://seek-app.s3.amazonaws.com/Ottoman2707650+(1).glb"]
         },
       ]
     }
