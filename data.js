@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-patio360view",
-      "name": "Living Room",
+      "name": "Temple & Webster",
       "levels": [
         {
           "tileSize": 256,
@@ -31,165 +31,73 @@ var APP_DATA = {
       "linkHotspots": [],
       "infoHotspots": [
         {
+          "yaw": 3.5,
+          "pitch": 0.6,
+          "sku": "TPWT1548",
+          "title": "Oscar Solid Oak TV Unit",
+          "price": "$499.00",
+          "text": "Stylish and sophisticated, this Oscar TV unit lends character and practicality to your living space. This gorgeous natural American oak wood TV unit brings elegance to both classic and contemporary interiors. It has soft-close doors, two central shelves, plus cable management holes to keep electrical cords neat.",
+          "image":["https://img.zcdn.com.au/lf/8/hash/38080/19276625/4/Oscar%2BOak%2BTV%2BUnit.jpg","https://img.zcdn.com.au/lf/8/hash/38080/18702740/4/Oscar%2BOak%2BTV%2BUnit.jpg"],
+          "model":[]
+        },
+        {
+          "yaw": 5.4,
+          "pitch": 0.6,
+          "sku": "TMPL1352",
+          "title": "Blue & Cream Evanna Vintage-Style Rug",
+          "price": "$169.00",
+          "text": "Blue & Cream Evanna Vintage-Style Rug",
+          "image":["https://img.zcdn.com.au/lf/8/hash/38080/19217319/4/Blue%2B%2526%2BCream%2BEvanna%2BVintage-Style%2BRug.jpg","https://img.zcdn.com.au/lf/8/hash/38080/18743790/4/Blue%2BEvanna%2BVintage%2BStyle%2BRug.jpg"],
+          "model":[]
+        },
+        {
           "yaw": 6,
           "pitch": 0.3,
-          "title": "allen + roth Solid Yellow Square Throw Pillow",
-          "price": "$19.98",
-          "text": 'Add some style and comfort to your outdoor living space with this decorative pillow featuring a textural design in neutral with white tufts. Sized at 14" x 20", it fits nicely on all sizes of furniture. Pillow features corner tassels. The pillow is treated with UV resistance for long, lasting color.',
-          "image":["https://mobileimages.lowes.com/product/converted/047218/047218320827.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/047218/047218320827_42288423.jpg?size=pdhi"],
+          "sku": "BLMA1350",
+          "title": "Cumulus Premium 3 Seater Cotton Slipcover Sofa",
+          "price": "$2,399.00",
+          "text": "Nestle in comfort with this beautiful sofa, which features 5 feather filled back cushions and 2 large feather wrapped foam seat cushions. The cushions are complete with narrow flange trims, which gives it a timeless European look. It's the ideal lounge in any relaxed setting.",
+          "image":["https://img.zcdn.com.au/lf/8/hash/37616/19081442/4/Stone%2BCumulus%2BPremium%2B3%2BSeater%2BLinen%2BSlipcover%2BSofa.jpg","https://img.zcdn.com.au/lf/8/hash/37616/18586266/4/Stone%2B%2BCumulus%2B3%2BSeater%2BSofa.jpg"],
           "model":[]
         },
         {
-          "yaw": 5.89,
-          "pitch": 0.3,
-          "title": "Safavieh Soleil 20-in x 20-in Green/White Polypropylene Square Indoor Decorative Pillow",
-          "price": "$109.23",
-          "text": 'Like a scene straight from a lush tropical isle, the Paradise Pillow is a sultry breeze made especially for your home decor. Soft textures and the evocative design of this classy-casual throw pillow make it an especially good choice for adding warm green tones and a cheerful pattern to room furnishings. A hidden zipper on the back cover makes for easy-access care and cleaning.',
-          "image":["https://mobileimages.lowes.com/product/converted/889048/889048535190.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/889048/889048535190_09855107.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/889048/889048535190_09855108.jpg?size=pdhi"],
-          "model":[]
-        },
-        {
-          "yaw": 6.2,
-          "pitch": 0.3,
-          "title": "allen + roth Animal Print Multi Rectangular Animals Lumbar Pillow",
-          "price": "$21.98",
-          "text": 'Leopard lumbar pillow is the perfect accessory to bring together your outdoor space and will coordinate great with your outdoor cushions.',
-          "image":["https://mobileimages.lowes.com/product/converted/850013/850013649792.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/850013/850013649792_42186964.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/850013/850013649792_42186969.jpg?size=pdhi"],
-          "model":[]
-        },
-        {
-          "yaw": 6.5,
-          "pitch": 0.2,
-          "title": "allen + roth Graphic Print Green Square Throw Pillow",
-          "price": "$24.98",
-          "text": 'Add some style and comfort to your outdoor living space with this decorative pillow featuring a textural design in neutral with white tufts. Sized at 14" x 20", it fits nicely on all sizes of furniture. Pillow features corner tassels. The pillow is treated with UV resistance for long, lasting color.',
-          "image":["https://mobileimages.lowes.com/product/converted/047218/047218320780.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/047218/047218320780_40178758.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/047218/047218320780_42284194.jpg?size=pdhi"],
-          "model":[]
-        },
-        {
-          "yaw": 6.3,
-          "pitch": 0.2,
-          "title": "CASAINC Futon Couch Sofa",
-          "price": "N/A",
-          "text": 'This product is currently not available, please come back later',
-          "image":["https://mobileimages.lowes.com/product/converted/500085/5000853111.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/500085/5000853111_40314204.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/500085/5000853111_40314207.jpg?size=pdhi"],
-          "model":[]
-        },
-        {
-          "yaw": 6.25,
-          "pitch": 0.67,
-          "title": "allen + roth 8-in Green and White Indoor Artificial Succulent Plants",
-          "price": "$19.98",
-          "text": 'This artificial potted sisal leaf is good to bring the outdoor into your home. The green leaves give a realistic look and natural touch. The artificial stem can be easily set up on the table or shell and prefect to display for any room.',
-          "image":["https://mobileimages.lowes.com/product/converted/014434/014434066853.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/014434/014434066853_15738936.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/014434/014434066853_42511590.jpg?size=pdhi"],
-          "model":[]
-        },
-        {
-          "yaw": 6.25,
-          "pitch": 0.9,
-          "title": "Grayson Lane Glam Blue Velvet Round Ottoman",
-          "price": "N/A",
-          "text": 'Add sleek texture with boho style to your bedroom or living room with this comfy large pouf, featuring aqua blue velvet upholstery. The large cushion can be used as a table, large ottoman, or stool, securely propped up by solid pine wood legs. The smooth top is taught with a radial stitched pattern and the sides are pleated for extra elegant texture',
-          "image":["https://mobileimages.lowes.com/product/converted/100313/1003130658.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/100313/1003130658_16578878.jpg?size=pdhi"],
-          "model":["models/Ottoman2707650.glb"]
-        },
-        {
-          "yaw": 5.7,
-          "pitch": -0.05,
-          "title": "Safavieh Aurelia 63.5-in Antique Gold Floor Lamp",
-          "price": "$243.33",
-          "text": 'Historic photos of sophisticated five-star suites in London set the standards for global luxury and inspired the majestic Aurelia Floor Lamp. Its antique gold finish and white cotton shade accentuate the gentle curves of its metal base and body.',
-          "image":["https://mobileimages.lowes.com/product/converted/683726/683726437840.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/683726/683726437840_08486799.jpg?size=pdhi"],
-          "model":[]
-        },
-        {
-          "yaw": 5.1,
-          "pitch": -0.15,
-          "title": "Mitzi by Hudson Valley Lighting Cora 5-in W 2-Light Aged Brass Modern/Contemporary Wall Sconce",
-          "price": "$220",
-          "text": 'Sconces are a throwback that remains vital in thoughtful design. Whether entertaining friends or staying in and catching up on you time, sconces set to a dimmer switch allow you to master the mood. Use them to playfully add personality to your space, taking it from functional to optimal along the way.',
-          "image":["https://mobileimages.lowes.com/product/converted/806134/806134835330.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/806134/806134835330_42293154.jpg?size=pdhi"],
-          "model":["models/Sconce2502653.glb"]
-        },
-        {
-          "yaw": 5.35,
-          "pitch": -0.05,
-          "title": "Cheung's Set of 2 Blue Wood Boxes with Overlaid Mirror Panels",
-          "price": "N/A",
-          "text": 'In bedrooms, entryways, mantles and more, keepsake boxes have provided a unique heirloom touch many spaces. Perfect for storing treasured items or everyday objects, they provide an eye-catching and warm look. This one in particular features a soft blue finish along with center and top mirrors overlaid by an elegant pattern.',
-          "image":["http://mobileimages.lowes.com/product/converted/100278/1002785820_15679299.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/100278/1002785820_15679301.jpg?size=pdhi"],
-          "model":[]
-        },
-        {
-          "yaw": 5.38,
-          "pitch": 0.05,
-          "title": "Grayson Lane Grayson Lane 11-in x 12-in Eclectic Monkey Sculpture Gold Resin",
-          "price": "N/A",
-          "text": 'This product is not available',
-          "image":["https://mobileimages.lowes.com/product/converted/500031/5000313139.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/500031/5000313139_18188587.jpg?size=pdhi"],
-          "model":[]
-        },
-        {
-          "yaw": 5.45,
-          "pitch": 0.05,
-          "title": "Umbra Prisma Matte Brass Picture Frame (8-in x 10-in)",
-          "price": "N/A",
-          "text": 'This product is not available',
-          "image":["https://mobileimages.lowes.com/product/converted/100244/1002445732.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/100244/1002445732_42488487.jpg?size=pdhi"],
-          "model":[]
-        },
-        {
-          "yaw": 5.3,
-          "pitch": -0.2,
-          "title": "Grayson Lane Grayson Lane Set of 2 7.5-in, 9.75-in Farmhouse Vase Multi Colored Stoneware",
-          "price": "N/A",
-          "text": 'Evoking a warm and cozy feel, this set of small stoneware vases is an ideal decorative accent in living spaces of farmhouse or country cottage styled homes. The ceramic pair features a matte finish with pink geometric textured patterns around the body. Each vase features a narrow neck with the shoulders widening to the body in a pink finish. Place large leafy plants or small bouquets to elevate the old-world charm of farmhouse or country cottage style interiors.',
-          "image":["https://mobileimages.lowes.com/product/converted/500005/5000057489.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/500005/5000057489_17151697.jpg?size=pdhi"],
-          "model":[]
-        },
-        {
-          "yaw": 7.25,
-          "pitch": 0.8,
-          "title": "allen + roth Jute Woven 5 x 8 Khaki Indoor Solid Farmhouse/Cottage Handcrafted Area Rug",
-          "price": "$114",
-          "text": 'Meticulously hand-woven by artisans, this 100% jute rug is not only beautiful but stain-resistant, making it perfect for high-traffic areas',
-          "image":["https://mobileimages.lowes.com/product/converted/889292/889292219273.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/889292/889292219273_42401185.jpg?size=pdhi"],
-          "model":[]
-        },
-        {
-          "yaw": 7.8,
-          "pitch": 0.8,
-          "title": "Benzara Casual Pink and Gold Velvet Accent Chair",
-          "price": "N/A",
-          "text": 'Upscale your living room furniture by bringing this modernly designed accent chair in to your home. Supported by angled gold finished metal legs, this velvet upholstered accent chair features sea shell design backrest and deep vertical tufted detailing with extra plush padding that surrounds you in comfort.',
-          "image":["https://mobileimages.lowes.com/product/converted/100255/1002552112.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/100255/1002552112_16657415.jpg?size=pdhi"],
-          "model":[]
-        },
-        {
-          "yaw": 6.3,
-          "pitch": 0,
-          "title": "NuWallpaper 30.75-sq ft Vinyl Floral Self-Adhesive Peel and Stick Wallpaper",
-          "price": "$41.66",
-          "text": 'Make a statement with this vibrant, vintage-inspired peel and stick wallpaper. Gorgeous botanical damasks comprised of yellow birds, coral flowers, and green roses pop against a rich teal background. Summer Love Teal Peel and Stick Wallpaper comes on one roll that measures 20.5 inches wide by 18 feet long.',
-          "image":["https://mobileimages.lowes.com/product/converted/091212/091212344044.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/091212/091212344044_11552946.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/091212/091212344044_11552947.jpg?size=pdhi"],
+          "yaw": 5.85,
+          "pitch": 0.6,
+          "sku": "TMPL1280",
+          "title": "Light Oak Daintree Rattan & Oak Coffee Table",
+          "price": "289.00",
+          "text": "Opt for understated luxury in your living room with this coffee table. The round, warm-hued piece is ideal in a relaxed setting, its woven rattan top and simple frame the perfect partnership that's topped neatly with glass. Consider minimal accessories on top - such as a bouquet and a small ceramic accent - to enjoy the natural rattan weave.",
+          "image":["https://img.zcdn.com.au/lf/8/hash/38080/19217317/4/Light%2BOak%2BDaintree%2BRattan%2B%2526%2BOak%2BCoffee%2BTable.jpg","https://img.zcdn.com.au/lf/8/hash/38080/18715418/4/Light%2BOak%2BDaintree%2BRattan%2B%2526%2BOak%2BCoffee%2BTable.jpg"],
           "model":[]
         },
         {
           "yaw": 6.8,
           "pitch": 0.45,
-          "title": "allen + roth 12.01-in W x 12.01-in H Cream Ceramic Planter",
-          "price": "$42.98",
-          "text": 'Durable and stylish, the 12 In. cream white ceramic Estes planter comes with an attached saucer. The Estes planter features a versatile design in a soft cream white to fit any room in your home.',
-          "image":["https://mobileimages.lowes.com/product/converted/037094/037094036691.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/037094/037094036691_10442813.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/037094/037094036691_10370194.jpg?size=pdhi"],
+          "sku": "TMPL1958",
+          "title": "Mimi Velvet Armchair",
+          "price": "$349.00",
+          "text": "Luxuriate in Mimi's velvet upholstery. The tub chair has a panelled, curved back and armrest that embraces you like a hug, its tactile quality offering extra cosiness. The metal legs provide strength and stability, complimenting the seat's stylish finish.",
+          "image":["https://img.zcdn.com.au/lf/8/hash/38080/19149703/4/Mimi-Velvet-Armchair.jpg","https://img.zcdn.com.au/lf/8/hash/38080/18918724/4/Mimi%2BVelvet%2BArmchair.jpg","https://img.zcdn.com.au/lf/8/hash/38080/18994396/4/Mimi%2BVelvet%2BArmchair.jpg"],
           "model":[]
         },
         {
-          "yaw": 6.1,
-          "pitch": -0.92,
-          "title": "allen + roth Adara Black Traditional Drum Pendant Light",
-          "price": "$169.98",
-          "text": 'Natural rattan pendant from the allen + roth ADARA collection offers an on-trend earthy appeal',
-          "image":["https://mobileimages.lowes.com/product/converted/725916/725916106621.jpg?size=pdhi","http://mobileimages.lowes.com/product/converted/725916/725916106621_16650926.jpg?size=pdhi"],
+          "yaw": 7.65,
+          "pitch": 0,
+          "sku": "BLMA1070",
+          "title": "Misty Aqua Tear Drop Table Lamp",
+          "price": "$139.00",
+          "text": "The Dew Drop Glass Table Lamp has a subtle texture and is finished with a chrome base and top. With a 50’s yet modern vibe, this classic table lamp will be a stand out piece in your home.",
+          "image":["https://img.zcdn.com.au/lf/8/hash/37616/19217312/4/Misty%2BAqua%2BTear%2BDrop%2BTable%2BLamp.jpg","https://img.zcdn.com.au/lf/8/hash/37616/18932814/4/Misty-Blue-Dew-Drop-Table-Lamp-BM0072.jpg","https://img.zcdn.com.au/lf/8/hash/37616/18932815/4/Misty-Blue-Dew-Drop-Table-Lamp-BM0072.jpg"],
+          "model":[]
+        },
+        {
+          "yaw": 7.7,
+          "pitch": 0.18,
+          "sku": "TPWT2845",
+          "title": "110cm White Serena Italian Carrara Marble Console Table",
+          "price": "$499.00",
+          "text": "Gorgeous luxury without the eye-watering price tag, this slender console table is made of one of earth's finest stones. The natural Carrara marble top features unique grey veins characteristic of the material; it elevates any interior.",
+          "image":["https://img.zcdn.com.au/lf/8/hash/38080/19309715/4/110cm%2BWhite%2BSerena%2BItalian%2BCarrara%2BMarble%2BConsole%2BTable.jpg","https://img.zcdn.com.au/lf/8/hash/38080/19053116/4/110cm-White-Serena-Marble-Console-Table.jpg","https://img.zcdn.com.au/lf/8/hash/38080/18893852/4/Serena%2BMarble%2BConsole%2BTable.jpg"],
           "model":[]
         },
       ]
