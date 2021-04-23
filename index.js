@@ -356,6 +356,10 @@ var view = new Marzipano.RectilinearView(null, limiter);
       document.getElementById('desc').innerHTML = hotspot.text;
       document.getElementById('card-title').innerHTML = hotspot.title;
       document.getElementById('price').innerHTML = hotspot.price;
+      // document.getElementById('expbtn').setAttribute('onclick',window.open(hotspot.url));
+      document.getElementById('expbtn').onclick = function(){
+          window.open(hotspot.url);
+      }
 
       //insert images and dots
 
